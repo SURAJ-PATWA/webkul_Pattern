@@ -1,0 +1,97 @@
+#webkul pattern program round 1 
+#pattern runs for odd number like min 3 , 5, 7 etc
+#here is ther pattern
+#for n==3
+*       *
+**     **
+***@@@***
+   @@@
+   @@@
+   ***
+    *
+#for n==5 
+*             *
+**           **
+***         ***
+****       ****
+*****@@@@@*****
+     @@@@@
+     @@@@@
+     @@@@@
+     @@@@@
+     *****
+      ***
+       *
+#and so on for n==7.....
+#here is the program
+
+
+here is my code
+
+#include <iostream>
+using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main(){
+    int n=3;
+    
+    // 1st part
+    
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<=i;j++){
+            cout<<'*';
+        }
+        for(int j=0;j<(3*n-(2+2*i));j++){
+            cout<<" ";
+        }
+         for(int j=0;j<=i;j++){
+            cout<<'*';
+        }
+        cout<<endl;
+    }
+    
+    //2nd part
+    
+    for(int i=0;i<1;i++){
+        for(int j=0;j<n;j++){
+            cout<<'*';
+        }
+        for(int j=0;j<n;j++){
+            cout<<"@";
+        }
+       for(int j=0;j<n;j++){
+            cout<<'*';
+        }
+        cout<<endl;
+    }
+    
+    //3rd Part
+    
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n;j++){
+            cout<<" ";
+        }
+        for(int j=0;j<n;j++){
+            cout<<"@";
+        }
+        cout<<endl;
+    }
+    
+    //4th part
+    
+    for(int i=0;i<(n/2)+1;i++){
+        for(int j=0;j<(n+i);j++){
+            cout<<" ";
+        }
+        for(int j=0;j<(n-2*i);j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    
+    
+    return 0;
+}
