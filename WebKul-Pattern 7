@@ -1,6 +1,6 @@
 // Online C++ compiler to run C++ program online
 /*
-n=3
+n=5
 
        *
       ***
@@ -18,7 +18,22 @@ n=5
          *****
           ***
            *
+           
 
+n=7
+               *
+              ***
+             *****
+            *******
+           *********
+          ***********
+@@@@@@@@@*************
+          ***********
+           *********
+            *******
+             *****
+              ***
+               *
 */
 
 #include <iostream>
@@ -31,7 +46,7 @@ using std::endl;
 
 int main() {
     // Write C++ code here
-    int n=5;
+    int n=7;
     
     //1st part
    for (int i = 0; i < n-1; i++) {
